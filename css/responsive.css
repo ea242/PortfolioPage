@@ -1,0 +1,57 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero, .featured, main {
+    order: 10;
+    z-index: 0;
+}
+
+@media screen and (max-width: 360px) {
+    .hero {
+        min-height: 250px;
+    }
+
+    .featured {
+        width: 100%;
+        min-height: 350px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    main, .header__inner, .nav, .content {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.3em;
+    }
+
+    .hero {
+        min-height: 350px;
+    }
+
+    .featured {
+        width: 100%;
+        min-height: 460px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .featured {
+      width: 33.33%;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    main, .header__inner, .content {
+      width: 850px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1em;
+    }
+}
