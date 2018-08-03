@@ -47,6 +47,7 @@ header, nav, footer, section, div {
     margin-right: 1em;
     vertical-align: top;
     margin-top: 12px;
+    float: left;
 }
 
 /*
